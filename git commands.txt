@@ -1,0 +1,152 @@
+ugar@DESKTOP-BFNVR7A MINGW64 /d/Rutuja
+$ git config --global user.name
+Rutuja
+
+ugar@DESKTOP-BFNVR7A MINGW64 /d/Rutuja
+$ git config --global user.email
+rutujaganage11@gmail.com
+
+ugar@DESKTOP-BFNVR7A MINGW64 /d/Rutuja
+$ code .
+
+ugar@DESKTOP-BFNVR7A MINGW64 /d/Rutuja
+$ git init
+Initialized empty Git repository in D:/Rutuja/.git/
+
+ugar@DESKTOP-BFNVR7A MINGW64 /d/Rutuja (master)
+$ ls -lart
+total 316
+drwxr-xr-x 1 ugar 197121      0 Apr 23  2022 'Practice Codes'/
+drwxr-xr-x 1 ugar 197121      0 Jul 18 21:28  Documents/
+-rw-r--r-- 1 ugar 197121 290784 Nov 20 15:08  JSON_FILE.json
+-rw-r--r-- 1 ugar 197121  11101 Nov 20 16:38  CSV_FILE.csv
+drwxr-xr-x 1 ugar 197121      0 Nov 21 19:54 'DELL Data'/
+drwxr-xr-x 1 ugar 197121      0 Nov 25 21:13  ../
+drwxr-xr-x 1 ugar 197121      0 Nov 28 20:42  ./
+drwxr-xr-x 1 ugar 197121      0 Nov 28 20:42  .git/
+
+ugar@DESKTOP-BFNVR7A MINGW64 /d/Rutuja (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git commands.bat
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ugar@DESKTOP-BFNVR7A MINGW64 /d/Rutuja (master)
+$ git add index.html
+
+ugar@DESKTOP-BFNVR7A MINGW64 /d/Rutuja (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git commands.bat
+
+
+ugar@DESKTOP-BFNVR7A MINGW64 /d/Rutuja (master)
+$ git commit
+[master (root-commit) 6ae8162] Initial commit
+ 1 file changed, 12 insertions(+)
+ create mode 100644 index.html
+
+ugar@DESKTOP-BFNVR7A MINGW64 /d/Rutuja (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git commands.bat
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ugar@DESKTOP-BFNVR7A MINGW64 /d/Rutuja (master)
+$ touch about.html
+
+ugar@DESKTOP-BFNVR7A MINGW64 /d/Rutuja (master)
+$ touch contact.html
+
+ugar@DESKTOP-BFNVR7A MINGW64 /d/Rutuja (master)
+$ touch monuments.html
+
+ugar@DESKTOP-BFNVR7A MINGW64 /d/Rutuja (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        about.html
+        contact.html
+        git commands.bat
+        monuments.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ugar@DESKTOP-BFNVR7A MINGW64 /d/Rutuja (master)
+$ git add -A
+
+ugar@DESKTOP-BFNVR7A MINGW64 /d/Rutuja (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   about.html
+        new file:   contact.html
+        new file:   git commands.bat
+        new file:   monuments.html
+
+
+ugar@DESKTOP-BFNVR7A MINGW64 /d/Rutuja (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   about.html
+        new file:   contact.html
+        new file:   git commands.bat
+        new file:   monuments.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   contact.html
+
+
+ugar@DESKTOP-BFNVR7A MINGW64 /d/Rutuja (master)
+$ git add -A
+
+ugar@DESKTOP-BFNVR7A MINGW64 /d/Rutuja (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   about.html
+        new file:   contact.html
+        new file:   git commands.bat
+        new file:   monuments.html
+
+
+ugar@DESKTOP-BFNVR7A MINGW64 /d/Rutuja (master)
+$ git commit -m "Addedd more htmls"
+[master 0375d7b] Addedd more htmls
+ 4 files changed, 27 insertions(+)
+ create mode 100644 about.html
+ create mode 100644 contact.html
+ create mode 100644 git commands.bat
+ create mode 100644 monuments.html
+
+ugar@DESKTOP-BFNVR7A MINGW64 /d/Rutuja (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
